@@ -37,12 +37,15 @@
     color: black;
     margin-top: calc(22.5% - 100px);
     margin-bottom: calc(22.5% - 100px);
+
+    cursor: default;
 }
 
 #mp-subheader
 {
     font-size: 25px;
     color: black;
+    cursor: default;
 }
 
 #features
@@ -76,9 +79,11 @@
 .feature-box-title
 {
     font-size: 30px;
+    cursor: default;
 }
 
 .feature-box-content
 {
     font-size: 15px;
+    cursor: default;
 }

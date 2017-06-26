@@ -83,10 +83,11 @@ html, body
 /* Set a specific color for each brand */
 
 /* Facebook */
-.fa-facebook
+.fa-facebook, .fa-facebook:hover
 {
     background: #3B5998;
     color: white;
+    text-decoration: none;
 }
 
 /* Twitter */
@@ -96,9 +97,21 @@ html, body
     color: white;
 }
 
+.fa-twitter:hover
+{
+    text-decoration: none;
+    color: white;
+}
+
 /* Email */
 .fa-envelope
 {
     background: gray;
+    color: white;
+}
+
+.fa-envelope:hover
+{
+    text-decoration: none;
     color: white;
 }

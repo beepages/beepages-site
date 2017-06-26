@@ -12,9 +12,7 @@ for(let i = 0; i < routeLines.length; i++)
 	{
 		fs.readFile('./public/' + spl[1].trim(), 'utf8', function (err, data)
 		{
-			if (err) {
-				throw err;
-			}
+			if (err) { throw err; }
 			res.send(data.toString());
 		});
 	});
