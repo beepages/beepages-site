@@ -1,20 +1,26 @@
-var express = require('express');
-var app = express();
-
+const express = require("express"), app = express();
 app.set('port', (process.env.PORT || 5000));
+app.use(express.static("public"));
+const fs = require("fs");
 
-app.use(express.static(__dirname + '/public'));
+let routeData = fs.readFileSync(".route", "utf-8");
+let routeLines = routeData.split("\n");
+for(let i = 0; i < routeLines.length; i++)
+{
+	let spl = routeLines[i].split(" ");
+	app.get('/' + spl[0].trim(), function(req, res)
+	{
+		fs.readFile('./public/' + spl[1].trim(), 'utf8', function (err, data)
+		{
+			if (err) {
+				throw err;
+			}
+			res.send(data.toString());
+		});
+	});
+}
 
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
-
-app.get('/', function(request, response) {
-  response.render('pages/index');
+app.listen(app.get('port'), function()
+{
+	console.log('PORT: ', app.get('port'));
 });
-
-app.listen(app.get('port'), function() {
-  console.log('Node app is running on port', app.get('port'));
-});
-
-
