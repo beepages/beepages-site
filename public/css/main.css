@@ -4,10 +4,22 @@
     src: url('/../fonts/ElliotSans-Medium.ttf') format('truetype');
 }
 
+@font-face
+{
+    font-family: 'Elliot Sans-Light';
+    src: url('/../fonts/ElliotSans-Light.ttf') format('truetype');
+}
+
 html, body
 {
     margin: 0;
     padding: 0;
+}
+
+body
+{
+    
+    background-color: darkslategray;
 }
 
 #nav

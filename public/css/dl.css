@@ -1,0 +1,38 @@
+.page-content
+{
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.section-header
+{
+    font-family: 'Elliot Sans', sans-serif;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#zip-download, #clone-download
+{
+    font-family: 'Elliot Sans-Light', sans-serif;
+    padding: 30px;
+    border-radius: 60px;
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    margin: 15px;
+}
+
+#clone-download
+{
+    background-color: blue;
+}
+
+#download-links
+{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
