@@ -1,18 +1,21 @@
 const express = require("express"), app = express();
-app.set('port', (process.env.PORT || 5000));
-app.use(express.static("public"));
 const fs = require("fs");
+
+app.use(express.static("public"));
+app.set('port', (process.env.PORT || 5000));
 
 let routeData = fs.readFileSync(".route", "utf-8");
 let routeLines = routeData.split("\n");
+
 for(let i = 0; i < routeLines.length; i++)
 {
 	let spl = routeLines[i].split(" ");
 	app.get('/' + spl[0].trim(), function(req, res)
 	{
-		if(fs.existsSync('./public/' + spl[1].trim()))
+		let p = './public/' + spl[1].trim();
+		if(fs.existsSync(p))
 		{
-			fs.readFile('./public/' + spl[1].trim(), 'utf8', function (err, data)
+			fs.readFile(p, 'utf8', function (err, data)
 			{
 				if (err) { throw err; }
 				res.send(data.toString());
