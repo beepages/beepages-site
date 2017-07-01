@@ -1,13 +1,19 @@
 @font-face
 {
-    font-family: 'Elliot Sans';
-    src: url('/../fonts/ElliotSans-Medium.ttf') format('truetype');
+    font-family: 'CF';
+    src: url('/../fonts/timeburnernormal.ttf') format('truetype');
 }
 
 @font-face
 {
-    font-family: 'Elliot Sans-Light';
-    src: url('/../fonts/ElliotSans-Light.ttf') format('truetype');
+    font-family: 'CF-B';
+    src: url('/../fonts/timeburnerbold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'SF';
+    src: url('/../fonts/ElliotSans-Bold.ttf') format('truetype');
 }
 
 html, body
@@ -26,7 +32,7 @@ body
 {
     z-index: 1;
     width: 100%;
-    height: 60px;
+    height: calc(2vh + 4vw);
     
     background-color: rgba(0, 0, 0, 0.5);
     /* 
@@ -40,10 +46,10 @@ body
 
 .nav-item
 {
-    font-family: 'Elliot Sans', sans-serif;
-    font-size: 15px;
+    font-family: 'SF', sans-serif;
+    font-size: 2vh;
     color: white;
-    padding: 20px;
+    padding: 2vw;
 }
 
 .nav-item:hover
