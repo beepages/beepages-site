@@ -34,7 +34,7 @@ body
     width: 100%;
     height: calc(2vh + 4vw);
 
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(58, 53, 53, 0.5);
     /*
     background: transparent;
     background: -webkit-linear-gradient(180deg, black, transparent);
@@ -71,7 +71,7 @@ body
 #footer
 {
     height: 150px;
-    background-color: darkslategray;
+    background-color: rgb(25, 25, 25);
     text-align: center;
 }
 
