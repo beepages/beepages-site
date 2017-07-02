@@ -24,7 +24,7 @@ html, body
 
 body
 {
-    
+
     background-color: darkslategray;
 }
 
@@ -33,9 +33,9 @@ body
     z-index: 1;
     width: 100%;
     height: calc(2vh + 4vw);
-    
+
     background-color: rgba(0, 0, 0, 0.5);
-    /* 
+    /*
     background: transparent;
     background: -webkit-linear-gradient(180deg, black, transparent);
     background: -o-linear-gradient(180deg, black, transparent);
@@ -100,18 +100,10 @@ body
 
 /* Set a specific color for each brand */
 
-/* Facebook */
-.fa-facebook, .fa-facebook:hover
-{
-    background: #3B5998;
-    color: white;
-    text-decoration: none;
-}
-
 /* Twitter */
 .fa-twitter
 {
-    background: #55ACEE;
+    background: #F2C641;
     color: white;
 }
 
