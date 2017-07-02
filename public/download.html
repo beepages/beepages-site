@@ -28,10 +28,30 @@
             </div>
         </section>
         <section class="page-content">
-            <h1 class="section-header">Download BeePages</h1>
+            <h1 id="top-header" class="section-header">Download BeePages</h1>
             <div id="download-links">
                 <a id="zip-download" href="downloads/beepages-v0.6.1.rar">Download RAR (v0.6.1)</a>
             </div>
+
+            <h1 class="content-header">Prerequisites</h1>
+            <p class="content-main">Once you have BeePages extracted to your site folder, check that you have NodeJS globally installed</p>
+            <pre class="code-sample">node -v</pre>
+            <p class="content-main">and</p>
+            <pre class="code-sample">npm -v</pre>
+            <p class="content-main">If you do not have NodeJS installed yet, <a target="_blank" href="https://nodejs.org/en/download/">install it.</a></p>
+
+            <h1 class="content-header">Installing BeePages</h1>
+            <p class="content-main">After you download the RAR file, extract it to a folder for BeePages to run from. Then run (in cmd)</p>
+            <pre class="code-sample">npm update</pre>
+            <p class="content-main">in your folder to install the Node modules needed.</p>
+
+            <h1 class="content-header">Starting your site</h1>
+            <p class="content-main">To start the BeePages instance, execute <code>init_local.bat</code> or run</p>
+            <pre class="code-sample">npm start</pre>
+
+
+            <h1 class="content-header">Accessing your site</h1>
+            <p class="content-main">Your site can be found at <code>http://localhost:8080/</code>and you can find the admin tools at <code>http://localhost:8080/admin</code> after initializing BeePages.</p>
         </section>
         <section id="footer">
             <p id="copyright">&copy; BeePages</p>

@@ -81,6 +81,39 @@ body
     color: white;
 }
 
+.content-header
+{
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+.content-main
+{
+    margin-left: 75px;
+}
+
+.code-sample
+{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.page-content
+{
+    background-color: white;
+    margin-top: 0px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.section-header
+{
+    font-family: 'Elliot Sans', sans-serif;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+}
+
 /* Style all font awesome icons */
 .fa
 {

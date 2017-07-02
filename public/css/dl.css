@@ -1,17 +1,6 @@
-.page-content
+#download-links
 {
-    background-color: white;
-    margin-top: 0px;
-    padding-top: 40px;
-    padding-bottom: 50px;
-}
-
-.section-header
-{
-    font-family: 'Elliot Sans', sans-serif;
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
+    margin-bottom: 50px;
 }
 
 #zip-download, #clone-download
