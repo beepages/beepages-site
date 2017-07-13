@@ -1,7 +1,7 @@
 {
-  "name": "node-js-getting-started",
+  "name": "beepages-site",
   "version": "0.2.6",
-  "description": "A sample Node.js app using Express 4",
+  "description": "Website for BeePages",
   "engines": {
     "node": "6.11.1"
   },
