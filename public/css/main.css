@@ -24,7 +24,7 @@ html, body
 
 body
 {
-
+    overflow-x: hidden;
     background-color: darkslategray;
 }
 
@@ -66,12 +66,13 @@ body
 
 .ni-right
 {
-    margin-left: calc(90vw - 2vh);
+    position: relative;
+    float: right;
 }
 
 #footer
 {
-    height: 150px;
+    box-shadow: 0px 500px 0px 500px rgb(25, 25, 25);
     background-color: rgb(25, 25, 25);
     text-align: center;
 }
@@ -158,4 +159,35 @@ body
 {
     text-decoration: none;
     color: white;
+}
+
+.sl
+{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-item
+    {
+        position: absolute;
+        font-family: 'SF', sans-serif;
+        font-size: 20px;
+        color: white;
+        padding: 15px;
+    }
+
+    .ni-right
+    {
+        position: relative;
+    }
+
+    #nav
+    {
+        height: 50px;
+    }
+
+    #footer
+    {
+        padding: 30px;
+    }
 }
