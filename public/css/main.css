@@ -46,6 +46,7 @@ body
 
 .nav-item
 {
+    position: absolute;
     font-family: 'SF', sans-serif;
     font-size: 2vh;
     color: white;
@@ -65,7 +66,7 @@ body
 
 .ni-right
 {
-    float: right;
+    margin-left: calc(90vw - 2vh);
 }
 
 #footer
